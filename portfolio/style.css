@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+html{
+    scroll-behavior:smooth;
+}
+
 *{
     margin:0;
     padding:0;
@@ -10,45 +14,48 @@ body{
     font-family:'Poppins',sans-serif;
     background:#f8f4ef;
     color:#444;
+    overflow-x:hidden;
 }
 
-/* TOPO */
+/* HEADER */
 
 header{
     background:linear-gradient(135deg,#d8e2dc,#ffe5d9);
     text-align:center;
-    padding:50px 20px;
+    padding:25px;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+    animation:topFade 1.5s ease;
 }
 
 header h1{
-    font-size:4rem;
     color:#355070;
+    font-size:4rem;
     letter-spacing:4px;
+    animation:slideDown 1.5s ease;
 }
 
 .subtitle{
     margin-top:10px;
     color:#6d6875;
-    font-size:1.1rem;
 }
 
 nav ul{
     list-style:none;
-    margin-top:25px;
+    margin-top:20px;
 }
 
 nav ul li{
     display:inline-block;
-    margin:0 10px;
+    margin:8px;
 }
 
 nav ul li a{
     text-decoration:none;
     color:#355070;
-    font-weight:600;
-    padding:10px 20px;
+    padding:10px 18px;
     border-radius:25px;
-    transition:.3s;
+    font-weight:600;
+    transition:.4s;
 }
 
 nav ul li a:hover{
@@ -56,30 +63,52 @@ nav ul li a:hover{
     color:white;
 }
 
-/* HERO */
+/* INICIO */
 
 .hero{
+    height:100vh;
+    background:url("paris torre em feil.jpg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.hero-content{
+    background:rgba(0,0,0,.55);
+    backdrop-filter:blur(5px);
+    color:white;
     text-align:center;
-    padding:60px 20px;
+    padding:40px;
+    border-radius:20px;
+    max-width:700px;
+    animation:heroFade 2s ease;
 }
 
 .hero h2{
-    color:#355070;
-    margin-bottom:15px;
+    font-size:3rem;
+    margin-bottom:20px;
 }
 
 .hero p{
-    max-width:700px;
-    margin:auto;
     line-height:1.8;
 }
 
-/* GALERIA */
+/* TITULOS */
+
+.section-title{
+    text-align:center;
+    margin:60px 20px 30px;
+    color:#355070;
+    font-size:2.5rem;
+}
+
+/* GALERIA PRINCIPAL */
 
 .gallery{
     width:90%;
     margin:auto;
-    padding:40px 0;
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
     gap:30px;
@@ -89,72 +118,208 @@ nav ul li a:hover{
     background:white;
     border-radius:20px;
     overflow:hidden;
-    box-shadow:0 5px 20px rgba(0,0,0,.08);
-    transition:.4s;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+    transition:.5s;
+    animation:cardAppear 1s ease forwards;
 }
 
 .card:hover{
-    transform:translateY(-10px);
+    transform:translateY(-10px) scale(1.02);
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
 }
 
 .card img{
     width:100%;
     height:250px;
     object-fit:cover;
+    transition:.8s;
+}
+
+.card:hover img{
+    transform:scale(1.1);
 }
 
 .card h3{
     color:#355070;
-    padding:15px 15px 5px;
-    font-size:1.3rem;
+    padding:15px;
 }
 
 .card p{
     padding:0 15px 20px;
-    color:#666;
-    line-height:1.7;
+    line-height:1.8;
 }
 
-/* RODAPÉ */
+/* LUGARES PARA VISITAR */
+
+.place{
+    width:90%;
+    margin:40px auto;
+    display:flex;
+    align-items:center;
+    gap:40px;
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.place:hover{
+    transform:translateY(-5px);
+}
+
+.place img{
+    width:50%;
+    height:400px;
+    object-fit:cover;
+}
+
+.place-text{
+    padding:30px;
+    width:50%;
+}
+
+.place-text h3{
+    color:#355070;
+    margin-bottom:20px;
+    font-size:2rem;
+}
+
+.place-text p{
+    line-height:2;
+}
+
+/* CONTATO */
+
+.contact-box{
+    width:85%;
+    max-width:800px;
+    margin:40px auto;
+    background:white;
+    border-radius:20px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+}
+
+.contact-box h3{
+    margin-top:20px;
+    color:#355070;
+}
+
+.contact-box p{
+    margin:10px 0;
+    line-height:1.8;
+}
+
+/* FOOTER */
 
 footer{
-    background:#d8e2dc;
+    margin-top:50px;
+    background:#355070;
+    color:white;
     text-align:center;
-    padding:25px;
-    color:#355070;
-    font-weight:600;
+    padding:15px;
+    font-size:.9rem;
 }
 
 /* ANIMAÇÕES */
 
-header h1{
-    animation:slideIn 2s ease-out;
-}
+@keyframes slideDown{
 
-@keyframes slideIn{
     from{
-        transform:translateX(-100%);
         opacity:0;
+        transform:translateY(-60px);
     }
 
     to{
-        transform:translateX(0);
         opacity:1;
+        transform:translateY(0);
     }
 }
 
-.card{
-    animation:fadeIn 1s ease-out;
-}
+@keyframes heroFade{
 
-@keyframes fadeIn{
     from{
+        opacity:0;
         transform:scale(.8);
+    }
+
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+}
+
+@keyframes cardAppear{
+
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes topFade{
+
+    from{
         opacity:0;
     }
 
     to{
-        transform:scale(1);
         opacity:1;
+    }
+}
+
+/* CELULAR */
+
+@media(max-width:768px){
+
+    header h1{
+        font-size:2.5rem;
+    }
+
+    .hero{
+        height:80vh;
+    }
+
+    .hero h2{
+        font-size:2rem;
+    }
+
+    .hero-content{
+        margin:20px;
+        padding:25px;
+    }
+
+    .place{
+        flex-direction:column;
+    }
+
+    .place img{
+        width:100%;
+        height:250px;
+    }
+
+    .place-text{
+        width:100%;
+        padding:20px;
+    }
+
+    .gallery{
+        grid-template-columns:1fr;
+    }
+
+    .card img{
+        height:220px;
+    }
+
+    nav ul li{
+        display:block;
+        margin:10px 0;
     }
 }
