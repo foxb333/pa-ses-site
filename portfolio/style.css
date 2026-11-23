@@ -323,3 +323,160 @@ footer{
         margin:10px 0;
     }
 }
+.place-text h4{
+    color:#355070;
+    margin-top:15px;
+    margin-bottom:8px;
+    font-size:1.2rem;
+}
+
+.place-text p{
+    margin-bottom:12px;
+    line-height:1.8;
+}
+
+/* ANIMAÇÃO DE TRANSIÇÃO */
+body,
+header,
+.card,
+.place,
+.contact-box,
+footer,
+.hero-content,
+nav ul li a {
+    transition: background-color 0.6s ease,
+                color 0.6s ease,
+                border-color 0.6s ease,
+                box-shadow 0.6s ease;
+}
+
+/* BOTÃO */
+.theme-btn{
+    margin-top:15px;
+    padding:10px 20px;
+    border:none;
+    border-radius:25px;
+    background:#355070;
+    color:white;
+    cursor:pointer;
+    font-weight:600;
+    transition:.4s;
+}
+
+.theme-btn:hover{
+    transform:scale(1.05);
+}
+
+/* TEMA ESCURO */
+body.dark-mode{
+    background:#121212;
+    color:#e4e4e4;
+}
+
+body.dark-mode header{
+    background:linear-gradient(135deg,#1e1e1e,#2d2d2d);
+}
+
+body.dark-mode .card,
+body.dark-mode .place,
+body.dark-mode .contact-box{
+    background:#1f1f1f;
+    color:#e4e4e4;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3{
+    color:#8ecae6;
+}
+
+body.dark-mode footer{
+    background:#0b0b0b;
+}
+
+body.dark-mode nav ul li a{
+    color:#ffffff;
+}
+
+body.dark-mode nav ul li a:hover{
+    background:#355070;
+}
+
+body.dark-mode .hero-content{
+    background:rgba(0,0,0,.7);
+}
+.slider{
+    width:100%;
+    overflow:hidden;
+    margin:25px 0;
+}
+
+.slide-track{
+    display:flex;
+    width:calc(320px * 12);
+    animation:scroll 35s linear infinite;
+}
+
+.slide-track img{
+    width:320px;
+    height:200px;
+    object-fit:cover;
+    border-radius:15px;
+    margin:0 15px;
+}
+
+.slide-track:hover{
+    animation-play-state:paused;
+}
+
+@keyframes scroll{
+
+    0%{
+        transform:translateX(0);
+    }
+
+    100%{
+        transform:translateX(calc(-320px * 6));
+    }
+
+}
+/* DESTINOS */
+
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    object-position:center center;
+    display:block;
+}
+
+/* O QUE VISITAR */
+
+.place img{
+    width:50%;
+    min-width:50%;
+    height:400px;
+    object-fit:cover;
+    object-position:center center;
+    display:block;
+}
+
+/* TEXTO DOS LUGARES */
+
+.place-text{
+    width:50%;
+    padding:30px;
+}
+
+.place-text ul{
+    padding-left:20px;
+}
+
+.place-text li{
+    margin-bottom:15px;
+    line-height:1.8;
+}
+
+.place-text strong{
+    color:#355070;
+}

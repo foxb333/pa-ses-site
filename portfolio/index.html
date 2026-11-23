@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TOP MUNDO</title>
     <link rel="stylesheet" href="style.css">
-</head>
+   
+
 <body>
 
     <header>
@@ -18,140 +19,373 @@
                 <li><a href="#destinos">Destinos</a></li>
                 <li><a href="#galeria">Galeria</a></li>
                 <li><a href="#contato">Contato</a></li>
+                <head> <button id="theme-toggle" class="theme-btn">
+                    🌙 Tema Escuro
+                    <script src="script.js"></script>
+                <script src="tema.js"></script>
+                </body>
+                </button>
             </ul>
         </nav>
     </header>
 
     <!-- INÍCIO -->
-    <section id="inicio" class="hero">
-        <div class="hero-content">
-            <h2>Bem-vindo ao TOP MUNDO</h2>
+<section id="inicio" class="hero">
 
-            <p>
-                Descubra cidades incríveis, monumentos famosos e lugares que
-                fazem milhões de pessoas sonharem em viajar pelo mundo.
-            </p>
+    <div class="hero-content">
 
-            <p>
-                Nosso objetivo é apresentar alguns dos destinos mais belos,
-                modernos e admirados do planeta.
-            </p>
-        </div>
-    </section>
+        <h2>Bem-vindo ao TOP MUNDO</h2>
 
-    <!-- DESTINOS -->
-    <section id="destinos">
+        <div class="slider">
+            <div class="slide-track">
 
-        <h2 class="section-title">Destinos Imperdíveis</h2>
-
-        <div class="gallery">
-
-            <div class="card">
                 <img src="lisboa.2.jpg" alt="Lisboa">
-                <h3>Lisboa - Portugal</h3>
-                <p>
-                    Cidade histórica conhecida pelos bondinhos,
-                    mirantes e excelente gastronomia.
-                </p>
-            </div>
-
-            <div class="card">
                 <img src="paris torre em feil.jpg" alt="Paris">
-                <h3>Paris - França</h3>
-                <p>
-                    A charmosa Cidade Luz, lar da famosa Torre Eiffel.
-                </p>
-            </div>
-
-            <div class="card">
                 <img src="dubai.jpg" alt="Dubai">
-                <h3>Dubai - Emirados Árabes</h3>
-                <p>
-                    Luxo, tecnologia e alguns dos prédios mais altos do mundo.
-                </p>
-            </div>
-
-            <div class="card">
                 <img src="china.jpg" alt="China">
-                <h3>China</h3>
-                <p>
-                    Mega cidades modernas e avanços tecnológicos impressionantes.
-                </p>
-            </div>
-
-            <div class="card">
                 <img src="japão.jpg" alt="Japão">
-                <h3>Japão</h3>
-                <p>
-                    Equilíbrio perfeito entre tradição e modernidade.
-                </p>
-            </div>
-
-            <div class="card">
                 <img src="nova york.jpg" alt="Nova York">
-                <h3>Nova York</h3>
-                <p>
-                    A cidade que nunca dorme e uma das mais famosas do planeta.
-                </p>
+                <img src="rio-de-janeiro-fotos.jpg" alt="Rio de Janeiro">
+                <img src="italia-venecia-e1579918757767.jpg" alt="Veneza">
+
+                <!-- duplicadas para criar loop infinito -->
+
+                <img src="lisboa.2.jpg" alt="Lisboa">
+                <img src="paris torre em feil.jpg" alt="Paris">
+                <img src="dubai.jpg" alt="Dubai">
+                <img src="china.jpg" alt="China">
+                <img src="japão.jpg" alt="Japão">
+                <img src="nova york.jpg" alt="Nova York">
+                <img src="rio-de-janeiro-fotos.jpg" alt="Rio de Janeiro">
+                <img src="italia-venecia-e1579918757767.jpg" alt="Veneza">
+
             </div>
-
         </div>
-    </section>
 
-    <!-- GALERIA -->
-    <section id="galeria">
+        <p>
+            Descubra cidades incríveis, monumentos famosos e lugares que
+            fazem milhões de pessoas sonharem em viajar pelo mundo.
+        </p>
 
-        <h2 class="section-title">O que visitar</h2>
+        <p>
+            Nosso objetivo é apresentar alguns dos destinos mais belos,
+            modernos e admirados do planeta.
+        </p>
 
-        <div class="place">
+    </div>
 
+</section>
+
+   <!-- DESTINOS -->
+<section id="destinos">
+
+    <h2 class="section-title">Destinos Imperdíveis</h2>
+
+    <div class="gallery">
+
+        <div class="card">
+            <img src="lisboa.2.jpg" alt="Lisboa">
+            <h3>Lisboa - Portugal</h3>
+            <p>
+                Cidade histórica conhecida pelos bondinhos,
+                mirantes e excelente gastronomia.
+            </p>
+        </div>
+
+        <div class="card">
             <img src="paris torre em feil.jpg" alt="Paris">
-
-            <div class="place-text">
-                <h3>Paris</h3>
-                <ul>
-                    <li>Torre Eiffel</li>
-                    <li>Museu do Louvre</li>
-                    <li>Arco do Triunfo</li>
-                    <li>Avenida Champs-Élysées</li>
-                </ul>
-            </div>
-
+            <h3>Paris - França</h3>
+            <p>
+                A charmosa Cidade Luz, lar da famosa Torre Eiffel.
+            </p>
         </div>
 
-        <div class="place">
-
+        <div class="card">
             <img src="dubai.jpg" alt="Dubai">
-
-            <div class="place-text">
-                <h3>Dubai</h3>
-                <ul>
-                    <li>Burj Khalifa</li>
-                    <li>Dubai Mall</li>
-                    <li>Dubai Marina</li>
-                    <li>Safari no Deserto</li>
-                </ul>
-            </div>
-
+            <h3>Dubai - Emirados Árabes</h3>
+            <p>
+                Luxo, tecnologia e alguns dos prédios mais altos do mundo.
+            </p>
         </div>
 
-        <div class="place">
+        <div class="card">
+            <img src="china.jpg" alt="China">
+            <h3>China</h3>
+            <p>
+                Mega cidades modernas e avanços tecnológicos impressionantes.
+            </p>
+        </div>
 
+        <div class="card">
+            <img src="japão.jpg" alt="Japão">
+            <h3>Japão</h3>
+            <p>
+                Equilíbrio perfeito entre tradição e modernidade.
+            </p>
+        </div>
+
+        <div class="card">
             <img src="nova york.jpg" alt="Nova York">
-
-            <div class="place-text">
-                <h3>Nova York</h3>
-                <ul>
-                    <li>Times Square</li>
-                    <li>Central Park</li>
-                    <li>Empire State Building</li>
-                    <li>Estátua da Liberdade</li>
-                </ul>
-            </div>
-
+            <h3>Nova York</h3>
+            <p>
+                A cidade que nunca dorme e uma das mais famosas do planeta.
+            </p>
         </div>
 
-    </section>
+        <div class="card">
+            <img src="rio-de-janeiro-fotos.jpg" alt="Rio de Janeiro">
+            <h3>Rio de Janeiro - Brasil</h3>
+            <p>
+                Cidade famosa por suas praias, montanhas, paisagens naturais e pelo Cristo Redentor.
+            </p>
+        </div>
+
+        <div class="card">
+            <img src="italia-venecia-e1579918757767.jpg" alt="Veneza">
+            <h3>Veneza - Itália</h3>
+            <p>
+                Cidade encantadora conhecida por seus canais, gôndolas e arquitetura histórica.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+    <!-- GALERIA -->
+<section id="galeria">
+
+    <h2 class="section-title">O que visitar</h2>
+
+    <div class="place">
+
+        <img src="paris torre em feil.jpg" alt="Paris">
+
+        <div class="place-text">
+            <h3>Paris</h3>
+            <ul>
+                <li>
+                    <strong>Torre Eiffel:</strong> A Torre Eiffel é uma ótima escolha para quem deseja apreciar uma das vistas mais incríveis de Paris e conhecer o principal símbolo da França.
+                </li>
+
+                <li>
+                    <strong>Museu do Louvre:</strong> Um dos museus mais famosos do mundo, ideal para quem gosta de arte, história e cultura.
+                </li>
+
+                <li>
+                    <strong>Arco do Triunfo:</strong> Monumento histórico que representa importantes momentos da história francesa e oferece uma vista privilegiada da cidade.
+                </li>
+
+                <li>
+                    <strong>Avenida Champs-Élysées:</strong> Perfeita para passeios, compras e para apreciar uma das avenidas mais elegantes do mundo.
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="place">
+
+        <img src="dubai.jpg" alt="Dubai">
+
+        <div class="place-text">
+            <h3>Dubai</h3>
+            <ul>
+                <li>
+                    <strong>Burj Khalifa:</strong> O prédio mais alto do mundo e uma das atrações mais visitadas dos Emirados Árabes Unidos.
+                </li>
+
+                <li>
+                    <strong>Dubai Mall:</strong> Um enorme centro comercial com centenas de lojas, restaurantes e opções de entretenimento.
+                </li>
+
+                <li>
+                    <strong>Dubai Marina:</strong> Região moderna cercada por arranha-céus e ideal para passeios à beira-mar.
+                </li>
+
+                <li>
+                    <strong>Safari no Deserto:</strong> Uma experiência emocionante pelas dunas, permitindo conhecer mais da cultura local.
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="place">
+
+        <img src="nova york.jpg" alt="Nova York">
+
+        <div class="place-text">
+            <h3>Nova York</h3>
+            <ul>
+                <li>
+                    <strong>Times Square:</strong> Famosa pelos telões luminosos e pela movimentação constante de turistas.
+                </li>
+
+                <li>
+                    <strong>Central Park:</strong> Um dos parques urbanos mais conhecidos do mundo, ideal para caminhadas e lazer.
+                </li>
+
+                <li>
+                    <strong>Empire State Building:</strong> Arranha-céu histórico que proporciona uma vista espetacular de Manhattan.
+                </li>
+
+                <li>
+                    <strong>Estátua da Liberdade:</strong> Um dos maiores símbolos dos Estados Unidos e parada obrigatória para visitantes.
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="place">
+
+        <img src="lisboa.2.jpg" alt="Lisboa">
+    
+        <div class="place-text">
+            <h3>Lisboa</h3>
+    
+            <ul>
+                <li>
+                    <strong>Torre de Belém:</strong> Um dos monumentos mais famosos de Portugal e símbolo das grandes navegações portuguesas.
+                </li>
+    
+                <li>
+                    <strong>Mosteiro dos Jerónimos:</strong> Patrimônio histórico conhecido por sua impressionante arquitetura manuelina.
+                </li>
+    
+                <li>
+                    <strong>Praça do Comércio:</strong> Uma das praças mais bonitas de Lisboa, localizada às margens do Rio Tejo.
+                </li>
+    
+                <li>
+                    <strong>Elétrico 28:</strong> Passeio tradicional que percorre os principais bairros históricos da cidade.
+                </li>
+            </ul>
+    
+        </div>
+    
+    </div>
+    
+    <div class="place">
+    
+        <img src="china.jpg" alt="China">
+    
+        <div class="place-text">
+            <h3>China</h3>
+    
+            <ul>
+                <li>
+                    <strong>Muralha da China:</strong> Uma das construções mais impressionantes já feitas pela humanidade.
+                </li>
+    
+                <li>
+                    <strong>Cidade Proibida:</strong> Antigo complexo imperial repleto de história e cultura chinesa.
+                </li>
+    
+                <li>
+                    <strong>Xangai:</strong> Cidade moderna famosa pelos arranha-céus e pela vida urbana vibrante.
+                </li>
+    
+                <li>
+                    <strong>Exército de Terracota:</strong> Importante sítio arqueológico com milhares de esculturas de guerreiros.
+                </li>
+            </ul>
+    
+        </div>
+    
+    </div>
+    
+    <div class="place">
+    
+        <img src="japão.jpg" alt="Japão">
+    
+        <div class="place-text">
+            <h3>Japão</h3>
+    
+            <ul>
+                <li>
+                    <strong>Monte Fuji:</strong> O cartão-postal mais famoso do Japão e uma paisagem admirada por visitantes do mundo inteiro.
+                </li>
+    
+                <li>
+                    <strong>Templo Senso-ji:</strong> Um dos templos budistas mais importantes e visitados de Tóquio.
+                </li>
+    
+                <li>
+                    <strong>Shibuya Crossing:</strong> Cruzamento mundialmente conhecido pelo intenso movimento de pessoas.
+                </li>
+    
+                <li>
+                    <strong>Quioto:</strong> Cidade tradicional que preserva templos, jardins e a cultura histórica japonesa.
+                </li>
+            </ul>
+    
+        </div>
+    
+    </div>
+    <div class="place">
+
+        <img src="rio-de-janeiro-fotos.jpg" alt="Rio de Janeiro">
+    
+        <div class="place-text">
+    
+            <h3>Rio de Janeiro</h3>
+    
+            <ul>
+                <li>
+                    <strong>Cristo Redentor:</strong> Uma das Sete Maravilhas do Mundo Moderno e o principal símbolo do Brasil.
+                </li>
+    
+                <li>
+                    <strong>Pão de Açúcar:</strong> Oferece uma das vistas mais impressionantes da cidade através do famoso bondinho.
+                </li>
+    
+                <li>
+                    <strong>Praia de Copacabana:</strong> Uma das praias mais conhecidas do planeta, ideal para lazer e esportes.
+                </li>
+    
+                <li>
+                    <strong>Maracanã:</strong> Estádio histórico que recebeu finais de Copa do Mundo e grandes eventos esportivos.
+                </li>
+            </ul>
+    
+        </div>
+    
+    </div>
+    
+    <div class="place">
+    
+        <img src="italia-venecia-e1579918757767.jpg" alt="Veneza">
+    
+        <div class="place-text">
+    
+            <h3>Italía</h3>
+    
+            <ul>
+    
+                <li>
+                    <strong>Grande Canal:</strong> Principal via aquática de Veneza, cercada por construções históricas.
+                </li>
+    
+                <li>
+                    <strong>Ponte de Rialto:</strong> Uma das pontes mais famosas da Itália e cartão-postal da cidade.
+                </li>
+    
+                <li>
+                    <strong>Praça de São Marcos:</strong> Centro turístico de Veneza, cercado por monumentos históricos.
+                </li>
+    
+                <li>
+                    <strong>Passeio de Gôndola:</strong> Experiência tradicional que permite explorar os canais da cidade.
+                </li>
+    
+            </ul>
+    
+        </div>
+    
+    </div>
+</section>
+
+
 
     <!-- CONTATO -->
     <section id="contato">

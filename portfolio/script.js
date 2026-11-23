@@ -1,6 +1,7 @@
 const cards = document.querySelectorAll('.card');
 
 cards.forEach(card => {
+
     card.addEventListener('click', () => {
 
         card.style.boxShadow =
@@ -9,4 +10,5 @@ cards.forEach(card => {
             : '0 0 30px #b7c4cf';
 
     });
+
 });
