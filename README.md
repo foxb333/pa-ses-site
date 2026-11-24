@@ -1,12 +1,16 @@
 # 🌍 TOP MUNDO
 
-Bem-vindo ao TOP MUNDO, um site desenvolvido para apresentar alguns dos destinos turísticos mais incríveis do planeta de forma moderna, visual e responsiva.
+Bem-vindo ao **TOP MUNDO**, um site desenvolvido para apresentar alguns dos destinos turísticos mais incríveis do planeta de forma moderna, visual e responsiva.
+
+---
 
 ## ✈️ Sobre o Projeto
 
 O TOP MUNDO foi criado para inspirar pessoas a conhecerem diferentes culturas, cidades e pontos turísticos ao redor do mundo.
 
-O site reúne informações básicas, imagens e sugestões de locais para visitar em destinos famosos internacionalmente.
+O site reúne informações, imagens, curiosidades e sugestões de locais para visitar em destinos famosos internacionalmente.
+
+---
 
 ## 🌎 Destinos Apresentados
 
@@ -16,64 +20,96 @@ O site reúne informações básicas, imagens e sugestões de locais para visita
 - 🇨🇳 China
 - 🇯🇵 Japão
 - 🇺🇸 Nova York - Estados Unidos
+- 🇧🇷 Rio de Janeiro - Brasil
+- 🇮🇹 Veneza - Itália
+- 🇪🇬 Egito
+- 🇷🇺 Rússia
+- 🇮🇳 Índia
+
+---
 
 ## ✨ Funcionalidades
 
-- Menu de navegação simples
-- Banner inicial com imagem de destaque
-- Cards informativos dos destinos
-- Seção com sugestões de locais para visitar
-- Layout moderno em tons pastéis
-- Animações suaves
-- Efeitos visuais nas imagens
-- Design responsivo para celulares, tablets e computadores
-- Área de contato demonstrativa
+- ✅ Menu de navegação responsivo
+- ✅ Carrossel automático de destinos
+- ✅ Tema claro e escuro
+- ✅ Salvamento do tema no navegador
+- ✅ Cards informativos dos destinos
+- ✅ Seção "O que visitar"
+- ✅ Curiosidades dos países
+- ✅ Efeitos visuais e animações suaves
+- ✅ Layout moderno e responsivo
+- ✅ Área de contato
+- ✅ Compatível com celulares, tablets e computadores
+
+---
 
 ## 🛠️ Tecnologias Utilizadas
 
 - HTML5
 - CSS3
+- JavaScript
 - Google Fonts (Poppins)
+
+---
 
 ## 📱 Responsividade
 
-O projeto foi desenvolvido para funcionar em diferentes tamanhos de tela:
+O projeto foi desenvolvido para funcionar corretamente em:
 
-- Smartphones
-- Tablets
-- Notebooks
-- Monitores Desktop
+- 📱 Smartphones
+- 📲 Tablets
+- 💻 Notebooks
+- 🖥️ Computadores Desktop
+
+---
 
 ## 📂 Estrutura de Arquivos
 
 ```text
 TOP-MUNDO/
-│
+
 ├── index.html
 ├── style.css
-│
+├── script.js
+├── tema.js
+
 ├── lisboa.2.jpg
 ├── paris torre em feil.jpg
 ├── dubai.jpg
 ├── china.jpg
 ├── japão.jpg
-└── nova york.jpg
-```
+├── nova york.jpg
+├── rio-de-janeiro-fotos.jpg
+├── italia-venecia-e1579918757767.jpg
+├── cidades-da-russia-sochi.jpg
+├── Viajar-Haridwar-Revista-Tudo.jpg
+├── 1-2.jpg
+
+└── imagens das bandeiras
+---
 
 ## 🎯 Objetivo
 
-O principal objetivo deste projeto é praticar conceitos de desenvolvimento web utilizando HTML e CSS, criando uma experiência agradável para os usuários interessados em turismo e viagens.
+Praticar conceitos de desenvolvimento web utilizando HTML, CSS e JavaScript, criando uma experiência agradável e visualmente atrativa para usuários interessados em turismo, cultura e viagens.
+
+---
 
 ## 📸 Créditos
 
-As imagens utilizadas no projeto têm finalidade educacional e demonstrativa.
+As imagens utilizadas no projeto possuem finalidade educacional e demonstrativa.
+
+---
 
 ## 🚀 Autor
 
 Projeto desenvolvido por:
 
-**Pietro e Gabriela**
+**Pietro Henrique**  
+**Gabriela**
 
 ---
 
-🌍 TOP MUNDO - Explore o mundo sem sair de casa.
+# 🌍 TOP MUNDO
+
+### Explore o mundo sem sair de casa ✈️
