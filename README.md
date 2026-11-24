@@ -31,7 +31,7 @@ O site reúne informações, imagens, curiosidades e sugestões de locais para v
 ## ✨ Funcionalidades
 
 - ✅ Menu de navegação responsivo
-- ✅ Carrossel automático de destinos
+- ✅ Carrossel contínuo de destinos
 - ✅ Tema claro e escuro
 - ✅ Salvamento do tema no navegador
 - ✅ Cards informativos dos destinos
@@ -46,6 +46,7 @@ O site reúne informações, imagens, curiosidades e sugestões de locais para v
 
 ## 🛠️ Tecnologias Utilizadas
 
+- React
 - HTML5
 - CSS3
 - JavaScript
@@ -74,14 +75,35 @@ pa-ses-site/
     ├── style.css
     ├── script.js
     ├── tema.js
-    └── imagens dos destinos e curiosidades (.jpg)
+    ├── lisboa.2.jpg
+    ├── paris torre em feil.jpg
+    ├── dubai.jpg
+    ├── china.jpg
+    ├── japão.jpg
+    ├── nova york.jpg
+    ├── rio-de-janeiro-fotos.jpg
+    ├── italia-venecia-e1579918757767.jpg
+    ├── 1-2.jpg
+    ├── cidades-da-russia-sochi.jpg
+    ├── endia.jpg
+    ├── images (2).jpg.jpg
+    ├── images (2).jpg
+    ├── images (3).jpg
+    ├── images (4).jpg
+    ├── istockphoto-1332466002-612x612.jpg
+    ├── images.jpg
+    ├── images (3).jpg.jpg
+    ├── images (4).jpg.jpg
+    ├── images (5).jpg
+    ├── images (6).jpg
+    └── images (7).jpg
 ```
 
 ---
 
 ## 🎯 Objetivo
 
-Praticar conceitos de desenvolvimento web utilizando HTML, CSS e JavaScript, criando uma experiência agradável e visualmente atrativa para usuários interessados em turismo, cultura e viagens.
+Praticar conceitos de desenvolvimento web utilizando HTML, CSS e JavaScript (e a adaptação para React), criando uma experiência agradável e visualmente atrativa para usuários interessados em turismo, cultura e viagens.
 
 ---
 
