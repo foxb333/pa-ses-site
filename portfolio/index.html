@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TOP MUNDO - explore destinos incríveis, pontos turísticos e curiosidades de lugares ao redor do mundo.">
     <title>TOP MUNDO</title>
     <link rel="stylesheet" href="style.css">
-   
-
+</head>
 <body>
 
     <header>
@@ -18,15 +18,12 @@
                 <li><a href="#inicio">Início</a></li>
                 <li><a href="#destinos">Destinos</a></li>
                 <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#curiosidades">Curiosidades</a></li>
                 <li><a href="#contato">Contato</a></li>
-                <head> <button id="theme-toggle" class="theme-btn">
-                    🌙 Tema Escuro
-                    <script src="script.js"></script>
-                <script src="tema.js"></script>
-                </body>
-                </button>
             </ul>
         </nav>
+
+        <button id="theme-toggle" class="theme-btn" type="button" aria-pressed="false">🌙 Tema Escuro</button>
     </header>
 
    <!-- INÍCIO -->
@@ -50,23 +47,23 @@
                 <img src="nova york.jpg" alt="Nova York">
                 <img src="rio-de-janeiro-fotos.jpg" alt="Rio de Janeiro">
                 <img src="italia-venecia-e1579918757767.jpg" alt="Veneza">
-                <img src="images.jpg" alt="Egito">
+                <img src="1-2.jpg" alt="Egito">
                 <img src="cidades-da-russia-sochi.jpg" alt="Rússia">
-                <img src="Viajar-Haridwar-Revista-Tudo.jpg" alt="Índia">
+                <img src="endia.jpg" alt="Índia">
 
                 <!-- DUPLICADAS PARA LOOP INFINITO -->
 
-                <img src="lisboa.2.jpg" alt="Lisboa">
-                <img src="paris torre em feil.jpg" alt="Paris">
-                <img src="dubai.jpg" alt="Dubai">
-                <img src="china.jpg" alt="China">
-                <img src="japão.jpg" alt="Japão">
-                <img src="nova york.jpg" alt="Nova York">
-                <img src="rio-de-janeiro-fotos.jpg" alt="Rio de Janeiro">
-                <img src="italia-venecia-e1579918757767.jpg" alt="Veneza">
-                <img src="images.jpg" alt="Egito">
-                <img src="cidades-da-russia-sochi.jpg" alt="Rússia">
-                <img src="Viajar-Haridwar-Revista-Tudo.jpg" alt="Índia">
+                <img src="lisboa.2.jpg" alt="" aria-hidden="true">
+                <img src="paris torre em feil.jpg" alt="" aria-hidden="true">
+                <img src="dubai.jpg" alt="" aria-hidden="true">
+                <img src="china.jpg" alt="" aria-hidden="true">
+                <img src="japão.jpg" alt="" aria-hidden="true">
+                <img src="nova york.jpg" alt="" aria-hidden="true">
+                <img src="rio-de-janeiro-fotos.jpg" alt="" aria-hidden="true">
+                <img src="italia-venecia-e1579918757767.jpg" alt="" aria-hidden="true">
+                <img src="1-2.jpg alt="" aria-hidden="true">
+                <img src="cidades-da-russia-sochi.jpg" alt="" aria-hidden="true">
+                <img src="endia.jpg" alt="" aria-hidden="true">
 
             </div>
 
@@ -159,7 +156,7 @@
         </div>
 
         <div class="card">
-            <img src="images.jpg" alt="Egito">
+            <img src="1-2.jpg" alt="Egito">
             <h3>Egito</h3>
             <p>
                 Terra das pirâmides, faraós e uma das civilizações mais fascinantes da história.
@@ -175,7 +172,7 @@
         </div>
 
         <div class="card">
-            <img src="Viajar-Haridwar-Revista-Tudo.jpg" alt="Índia">
+            <img src="endia.jpg" alt="Índia">
             <h3>Índia</h3>
             <p>
                 Um destino repleto de tradições, espiritualidade, cores e monumentos grandiosos.
@@ -358,11 +355,11 @@
     </div>
     <div class="place">
 
-        <img src="rio-de-janeiro-fotos.jpg" alt="Rio de Janeiro">
+        <img src="rio-de-janeiro-fotos.jpg" alt="Brasil">
     
         <div class="place-text">
     
-            <h3>Rio de Janeiro</h3>
+            <h3>Brasil</h3>
     
             <ul>
                 <li>
@@ -392,7 +389,7 @@
     
         <div class="place-text">
     
-            <h3>Italía</h3>
+            <h3>Itália</h3>
     
             <ul>
     
@@ -481,7 +478,7 @@
     </div>
     <div class="place">
 
-        <img src="Viajar-Haridwar-Revista-Tudo.jpg" alt="Índia">
+        <img src="endia.jpg" alt="Índia">
     
         <div class="place-text">
     
@@ -517,6 +514,8 @@
 <section id="curiosidades">
 
     <h2 class="section-title">🌍 Curiosidades do Mundo</h2>
+
+    <div class="curiosidades-grid">
 
     <div class="curiosidade-card">
         <img src="images (2).jpg.jpg" alt="Portugal" class="flag">
@@ -556,7 +555,7 @@
         </div>
 
         <div class="curiosidade-card">
-            <img src="images.jpg" alt="Estados Unidos" class="flag">
+            <img src="images.jpg" alt="Bandeira dos Estados Unidos" class="flag">
             <h3>Estados Unidos</h3>
             <p>• Nova York possui uma das populações mais diversas do mundo.</p>
             <p>• A Estátua da Liberdade foi um presente da França.</p>
@@ -586,7 +585,7 @@
         </div>
 
         <div class="curiosidade-card">
-            <img src="images (5).jpg" alt="Egito" class="flag">
+            <img src="images (5).jpg" alt="Foto do Egito" class="flag">
             <h3>Egito</h3>
             <p>• As Pirâmides de Gizé têm mais de quatro mil anos.</p>
             <p>• O Rio Nilo foi essencial para o desenvolvimento do país.</p>
@@ -637,5 +636,7 @@
         <p>© 2026 TOP MUNDO | Explore o mundo sem sair de casa</p>
     </footer>
 
+    <script src="script.js"></script>
+    <script src="tema.js"></script>
 </body>
 </html>

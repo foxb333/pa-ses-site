@@ -67,26 +67,16 @@ O projeto foi desenvolvido para funcionar corretamente em:
 ## 📂 Estrutura de Arquivos
 
 ```text
-TOP-MUNDO/
+pa-ses-site/
+├── README.md
+└── portfolio/
+    ├── index.html
+    ├── style.css
+    ├── script.js
+    ├── tema.js
+    └── imagens dos destinos e curiosidades (.jpg)
+```
 
-├── index.html
-├── style.css
-├── script.js
-├── tema.js
-
-├── lisboa.2.jpg
-├── paris torre em feil.jpg
-├── dubai.jpg
-├── china.jpg
-├── japão.jpg
-├── nova york.jpg
-├── rio-de-janeiro-fotos.jpg
-├── italia-venecia-e1579918757767.jpg
-├── cidades-da-russia-sochi.jpg
-├── Viajar-Haridwar-Revista-Tudo.jpg
-├── 1-2.jpg
-
-└── imagens das bandeiras
 ---
 
 ## 🎯 Objetivo
@@ -101,7 +91,7 @@ As imagens utilizadas no projeto possuem finalidade educacional e demonstrativa.
 
 ---
 
-## 🚀 Autor
+## 🚀 Autores
 
 Projeto desenvolvido por:
 
@@ -109,7 +99,5 @@ Projeto desenvolvido por:
 **Gabriela**
 
 ---
-
-# 🌍 TOP MUNDO
 
 ### Explore o mundo sem sair de casa ✈️

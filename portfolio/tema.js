@@ -1,20 +1,19 @@
 const themeButton = document.getElementById("theme-toggle");
 
-themeButton.addEventListener("click", () => {
+if (themeButton) {
+    const applyTheme = (isDark) => {
+        document.body.classList.toggle("dark-mode", isDark);
+        themeButton.textContent = isDark ? "☀️ Tema Claro" : "🌙 Tema Escuro";
+        themeButton.setAttribute("aria-pressed", isDark ? "true" : "false");
+        localStorage.setItem("theme", isDark ? "dark" : "light");
+    };
 
-    document.body.classList.toggle("dark-mode");
+    const savedTheme = localStorage.getItem("theme") === "dark";
+    document.body.classList.toggle("dark-mode", savedTheme);
+    themeButton.textContent = savedTheme ? "☀️ Tema Claro" : "🌙 Tema Escuro";
+    themeButton.setAttribute("aria-pressed", savedTheme ? "true" : "false");
 
-    if(document.body.classList.contains("dark-mode")){
-        themeButton.textContent = "☀️ Tema Claro";
-        localStorage.setItem("theme","dark");
-    }else{
-        themeButton.textContent = "🌙 Tema Escuro";
-        localStorage.setItem("theme","light");
-    }
-
-});
-
-if(localStorage.getItem("theme") === "dark"){
-    document.body.classList.add("dark-mode");
-    themeButton.textContent = "☀️ Tema Claro";
+    themeButton.addEventListener("click", () => {
+        applyTheme(!document.body.classList.contains("dark-mode"));
+    });
 }

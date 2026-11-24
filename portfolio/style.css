@@ -413,7 +413,7 @@ body.dark-mode .hero-content{
 
 .slide-track{
     display:flex;
-    width:calc(320px * 12);
+    width:max-content;
     animation:scroll 35s linear infinite;
 }
 
@@ -421,6 +421,7 @@ body.dark-mode .hero-content{
     width:320px;
     height:200px;
     object-fit:cover;
+    flex:0 0 320px;
     border-radius:15px;
     margin:0 15px;
 }
@@ -436,7 +437,7 @@ body.dark-mode .hero-content{
     }
 
     100%{
-        transform:translateX(calc(-320px * 6));
+        transform:translateX(calc(-350px * 11));
     }
 
 }
@@ -482,51 +483,6 @@ body.dark-mode .hero-content{
 }
 /* CURIOSIDADES */
 
-#curiosidades{
-    width:90%;
-    margin:60px auto;
-}
-
-.curiosidades-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:25px;
-}
-
-.curiosidade-card{
-    background:white;
-    padding:25px;
-    border-radius:20px;
-    box-shadow:0 10px 20px rgba(0,0,0,.08);
-    transition:.4s;
-}
-
-.curiosidade-card:hover{
-    transform:translateY(-8px);
-    box-shadow:0 20px 35px rgba(0,0,0,.15);
-}
-
-.curiosidade-card h3{
-    color:#355070;
-    margin-bottom:15px;
-    font-size:1.3rem;
-}
-
-.curiosidade-card p{
-    line-height:1.8;
-    margin-bottom:10px;
-}
-
-/* TEMA ESCURO */
-
-body.dark-mode .curiosidade-card{
-    background:#1f1f1f;
-    color:#e4e4e4;
-}
-
-body.dark-mode .curiosidade-card h3{
-    color:#8ecae6;
-}
 #curiosidades{
     width:90%;
     margin:60px auto;
